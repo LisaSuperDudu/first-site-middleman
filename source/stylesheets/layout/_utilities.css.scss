@@ -6,8 +6,8 @@
 
 // Paddings
 .padded {
-  padding-top: 5em;
-  padding-bottom: 5em;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
 // Backgrounds
@@ -23,3 +23,12 @@
 .bg-facebook {
   background: #3b5998;
 }
+.text-shadow {
+  text-shadow: 0px 0px 6px #7F7F7F;
+}
+
+p {
+  color: $gray-light;
+}
+
+
