@@ -1,10 +1,103 @@
----
-title: Le Wagon Middleman boilerplate
----
+    <!-- Banner -->
+      <div class="banner text-center" style="background-image: url('http://unsplash.it/1000/300')">
+        <div class="bg-filter"></div>
+        <div class="banner-content">
+          <h1>Startup Tools</h1>
+          <p>Very cool stuff…</p>
+          <%= link_to "Get it", "#", class: "btn btn-primary"%>
+        </div>
+      </div>
 
-<div class="welcome text-center padded">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+    <!-- Features -->
+
+    <div class="padded">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="feature">
+              <h3><%= image_tag "chat.png" %>Discuss best tools</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem odio quod architecto. Vitae enim sapiente minus, recusandae, alias, quaerat aspernatur nulla id sint itaque ratione, labore nihil magni quam amet.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="feature">
+              <h3><%= image_tag "mobile.png"%>Always in sync</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem odio quod architecto. Vitae enim sapiente minus, recusandae, alias, quaerat aspernatur nulla id sint itaque ratione, labore nihil magni quam amet.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="feature">
+              <h3><%= image_tag "search.png"%>Powerful search</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem odio quod architecto. Vitae enim sapiente minus, recusandae, alias, quaerat aspernatur nulla id sint itaque ratione, labore nihil magni quam amet.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="feature">
+              <h3><%= image_tag "heart.png"%>Share the love</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem odio quod architecto. Vitae enim sapiente minus, recusandae, alias, quaerat aspernatur nulla id sint itaque ratione, labore nihil magni quam amet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards -->
+
+    <div class="padded">
+      <h2 class="text-center">Most popular</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background-image:url('http://unsplash.it/300/200/?image=10')">
+              <%= link_to "", "#", class: "card-link" %>
+              <h3 class="card-category">Popular</h3>
+              <%= image_tag "http://placehold.it/30x30.jpg", class: "card-user-img img-circle" %>
+              <div class="card-infos">
+                <h2>Trello</h2>
+                <p>Very cool</p>
+              </div>
+            </div>
+          </div>
+
+           <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background-image:url('http://unsplash.it/300/200/?image=0')">
+              <%= link_to "", "#", class: "card-link" %>
+              <h3 class="card-category">Popular</h3>
+              <%= image_tag "http://placehold.it/30x30.jpg", class: "card-user-img img-circle" %>
+              <div class="card-infos">
+                <h2>Trello</h2>
+                <p>Very cool</p>
+              </div>
+            </div>
+          </div>
+
+           <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background-image:url('http://unsplash.it/300/200/?image=200')">
+              <%= link_to "", "#", class: "card-link" %>
+              <h3 class="card-category">Popular</h3>
+              <%= image_tag "http://placehold.it/30x30.jpg", class: "card-user-img img-circle" %>
+              <div class="card-infos">
+                <h2>Trello</h2>
+                <p>Very cool</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Newsletter -->
+
+    <%= partial "newsletter" %>
